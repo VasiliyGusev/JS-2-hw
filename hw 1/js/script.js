@@ -23,3 +23,7 @@ const renderGoodsList = (list) => {
 }
 
 renderGoodsList(goods);
+
+// onload = () => {
+//   renderGoodsList(goods)
+// }
