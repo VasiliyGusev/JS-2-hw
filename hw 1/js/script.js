@@ -1,20 +1,3 @@
-// const popup = document.getElementById('mypopup'),
-//       popupTogle = document.getElementById('myBtn'),
-//       popupClose = document.querySelector('.close');
-
-// popupTogle.onclick = () => {
-//   popup.style.display = "block";
-// }
-// popupClose.onclick = () => {
-//   popup.style.display = "none";
-// }
-// window.onclick = (e) => {
-//   if (e.target == popup) {
-//     popup.style.display = "none";
-//   }
-// }
-
-
 const API_URL = 'https://raw.githubusercontent.com/GeekBrainsTutorial/online-store-api/master/responses';
 const image = 'https://cdn.icon-icons.com/icons2/1416/PNG/128/basic-webpage-img-txt_97846.png'
 
@@ -84,8 +67,6 @@ class GoodsList {
   }
 }
 const list = new GoodsList();
-// list.fetchGoods();
-// list.render();
 
 /* 
   Класс корзины
@@ -136,7 +117,6 @@ const list = new GoodsList();
 Метод удаления из корзины
 Метод рендер
 */
-
 class CartItem {
   render(product) {
     return `
