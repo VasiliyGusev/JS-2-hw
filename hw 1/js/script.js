@@ -1,5 +1,5 @@
 const API_URL = 'https://raw.githubusercontent.com/GeekBrainsTutorial/online-store-api/master/responses';
-const image = 'https://cdn.icon-icons.com/icons2/1416/PNG/128/basic-webpage-img-txt_97846.png'
+const image = 'https://via.placeholder.com/200x150'
 
 class GoodsItem {
   constructor(title, price, image) {
@@ -134,5 +134,12 @@ class CartItem {
     </div>`;
   }
 }
-
 const basket = new Cart();
+
+
+let textMain = document.getElementById('main__text');
+function ret (param) {
+  // param.textContent = param.textContent.replace(/'/g, '"');
+  param.textContent = param.textContent.replace(/\B'|'\B/g, '"');
+};
+ret(textMain);
